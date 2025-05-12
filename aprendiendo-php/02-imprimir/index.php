@@ -7,7 +7,12 @@
     </head>
     <body>
         <h1>Master en PHP - F7</h1>
+
+        <?="Bienvenido al curso mas grande de PHP"?>
+
         <?php
+            //Titular de la seccion
+
             echo '<h3>Listado de videojuegos: </h3>';
             echo '<ul>'
                 ."<li>GTA</li>"
