@@ -5,7 +5,7 @@
     $texto = "Soy un texto";
     echo gettype($numero);
 
-    $mi_nombre = "F7Epsum";
+    $mi_nombre = "F7Epsum"; 
     var_dump($mi_nombre);
 
 ?>
