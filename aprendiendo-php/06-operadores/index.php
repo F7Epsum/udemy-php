@@ -13,8 +13,18 @@
     //Operadores incremento y decremento
     $year = 2019;
     $year++;
+    $year--;
 
-    echo "<h1>$year</h1>"
+    echo "<h1>$year</h1>";
+
+    //Operadores de asignacion
+    
+    $age = 55;
+
+    echo $age .'<br/>';
+    echo ($age+=5);
+    var_dump($age);
+
 
 
 
