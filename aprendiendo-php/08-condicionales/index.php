@@ -9,6 +9,11 @@
     // <> diferente
     // !== no identico
 
+    //OPERADORES LOGICOS
+    // && AND
+    //  || OR
+    // ! NO
+
     $color = "verde";
 
     if($color == "rojo"){
