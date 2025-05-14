@@ -14,6 +14,12 @@
     //  || OR
     // ! NO
 
+    //OPERADOR SWITCH
+    // switch (){
+    // case 1: 
+    // instrucciones
+    //   };
+
     $color = "verde";
 
     if($color == "rojo"){
@@ -23,4 +29,14 @@
     };
 
 
+    //OPERADOR GOTO
+
+    goto marca;
+    echo "<h3>Instruccion 1</h3>";
+    echo "<h3>Instruccion 2</h3>";
+    echo "<h3>Instruccion 3</h3>";
+    echo "<h3>Instruccion 4</h3>";
+
+    marca:
+    echo "<br/>Me he saltado 4 echos";
 ?>
