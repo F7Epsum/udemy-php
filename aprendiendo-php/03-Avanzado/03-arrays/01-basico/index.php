@@ -36,6 +36,28 @@ echo "<ul>";
     }
 echo "</ul>";
 
+//Arrays multidimensionales
+    $contactos = [
+        [
+        'nombre' => 'Antonio',
+        'mail' => 'Antonio@antonio.com',
+        ],
+        [
+        'nombre' => 'Luis',
+        'mail' => 'Luis@Luis.com',
+        ],
+        [
+        'nombre' => 'Maria',
+        'mail' => 'Maria@Maria.com',
+        ],
+    ];
+
+    var_dump($contactos);
+
+    foreach ($contactos as $key => $contacto){
+        var_dump($contacto['nombre']);
+    }
+
 
 
 
