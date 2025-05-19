@@ -23,7 +23,26 @@ Variables globales: Las que se declaraan fuera de una fucnion y
 
     echo "<h3> Esto es el echo " . holaMundo() . "</h3>";
 
+    //Funciones variables
 
+    function buenosDias(){
+        return "Hola! Buenos dias :)";         
+    }
 
+    function buenasTardes(){
+        return "Hey que tal ha ido la comida?";
+    }
+
+    function buenasNoches(){
+        return "Te vas a dormir ya? Buenas noches!!";
+    }
+
+    $horario = "buenasNoches";
+    echo $horario() . "<br/>";
+    echo buenosDias() . "<hr>";
+
+    $horario = "Tardes";
+    $miFuncion = "buenas".$horario;
+    echo $miFuncion();
 
 ?>
