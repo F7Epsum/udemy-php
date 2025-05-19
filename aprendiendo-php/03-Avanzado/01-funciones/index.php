@@ -52,22 +52,48 @@ muestraNombres();
         $multiplicacon = $num1 * $num2;
         $division = $num1 / $num2;
         
-        if($negrita){
-            echo "<h1>";
-        }
-
-        echo "Suma: " . $suma . "<br/>";
-        echo "Resta: " . $resta . "<br/>";
-        echo "Multiplicacion: " . $multiplicacon . "<br/>";
-        echo "Diivision: " . $division . "<br/>";
+        $cadena_texto = "";
 
         if($negrita){
-            echo "</h1>";
+            $cadena_texto .= "<h1>";
         }
+
+        $cadena_texto .= "Suma: " . $suma . "<br/>";
+        $cadena_texto .= "Resta: " . $resta . "<br/>";
+        $cadena_texto .= "Multiplicacion: " . $multiplicacon . "<br/>";
+        $cadena_texto .= "Diivision: " . $division . "<br/>";
+
+        if($negrita){
+            $cadena_texto .= "</h1>";
+        }
+        
+        return $cadena_texto;
     }
 
-    calculadora(10,30);
-    calculadora(10,30, true);
-    calculadora(10,30);
+    echo calculadora(10,30);
+    echo calculadora(10,30, true);
+    echo calculadora(10,30);
+
+    //Ejemplo 4
+
+    function getNombre($nombre){
+        $texto = "El nombre es: $nombre";
+        return $texto;
+    }
+
+    function getApellido($apellidos){
+        $texto = "Los apellidos son: $apellidos";
+        return $texto;
+    }
+    
+    function devuelveElNombre($nombre, $apellidos){
+        $texto = getNombre($nombre) . "<br/>" . getApellido($apellidos);
+        return $texto;
+
+    }
+
+    echo devuelveElNombre("Federico", "Carassale");
+
+
 
 ?>
