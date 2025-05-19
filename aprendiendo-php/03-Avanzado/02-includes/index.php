@@ -7,9 +7,6 @@ include 'includes/cabecera.php';
             <p>Texto de prueba de la pagina de inicioo</p>
         </div>
 
-        <!--Pie de pagina-->
-        <footer>
-            Todos los reservados &copy; Feca 7 <?=date('d-m-Y')?>
-        </footer>
-    </body>
-</html>
+<?php
+include 'includes/footer.php';
+?>
