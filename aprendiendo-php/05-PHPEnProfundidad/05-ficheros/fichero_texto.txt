@@ -1,0 +1,2 @@
+Hola soy un archivo de texto
+Como va todo??Soy un texto desde PHPSoy un texto desde PHPSoy un texto desde PHPSoy un texto desde PHPSoy un texto desde PHP<br/>Soy un texto desde PHP<br/>Soy un texto desde PHP<br/>Soy un texto desde PHP<br/>Soy un texto desde PHP<br/>Soy un texto desde PHP<br/>Soy un texto desde PHP<br/>Soy un texto desde PHP<br/>Soy un texto desde PHP<br/>Soy un texto desde PHP<br/>
