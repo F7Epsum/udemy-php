@@ -10,11 +10,30 @@
         <?php
             if(isset($_GET['error'])){
                 $error = $_GET['error'];
+                }
                 if($error == 'faltan_valores'){
                     echo '<strong style="color:red"> Introduce todos los datos del formulario</strong>';
                 }
-            }
+                
+                if($error == 'nombre'){
+                    echo '<strong style="color:red"> Introduce bien el nombre</strong>';
+                }
 
+                if($error == 'apellidos'){
+                    echo '<strong style="color:red"> Introduce bien el apellido</strong>';
+                }
+
+                if($error == 'email'){
+                    echo '<strong style="color:red"> Introduce bien el email</strong>';
+                }
+
+                if($error == 'edad'){
+                    echo '<strong style="color:red"> Introduce bien la edad</strong>';
+                }
+
+                if($error == 'password'){
+                    echo '<strong style="color:red"> Introduce una pass de mas de 5 caracteres</strong>';
+                }
 
         ?>
 

@@ -17,11 +17,11 @@
             $pass = $_POST['pass'];
 
             //Validar el nombre
-            if(!is_string($nombre) && !preg_match("/^[a-zA-Z ]+$/", $nombre)){
+            if(!is_string($nombre) || !preg_match("/^[a-zA-Z ]+$/", $nombre)){
                 $error = 'nombre';
             }
 
-            if(!is_string($apellidos) && !preg_match("/^[a-zA-Z ]+$/", $apellidos)){
+            if(!is_string($apellidos) || !preg_match("/^[a-zA-Z ]+$/", $apellidos)){
                 $error = 'apellidos';
             }
             
@@ -31,12 +31,12 @@
                 $error = 'edad';
             }
 
-            if(!is_string($email) && !filter_var($email, FILTER_VALIDATE_EMAIL)){
+            if(!is_string($email) || !filter_var($email, FILTER_VALIDATE_EMAIL)){
                 $error = 'email';
             }
             
 
-            if(empty($pass) && strlen($pass)<5){
+            if(empty($pass) || strlen($pass)<5){
                 $error = 'password';
             }
             
