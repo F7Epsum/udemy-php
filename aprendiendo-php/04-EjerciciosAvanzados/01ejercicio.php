@@ -3,7 +3,8 @@ Hacer un programa en PHP que tenga un array con 8 numeros enteros y que haga lo 
 - Recorrer y mostrar
 - Ordenarlo y mostrarlo
 - Mostrar su longitud
-- Buscar algun elemento -->
+- Buscar algun elemento (que sea buscdo por el parametro GET)
+ -->
 
 <?php
 
@@ -39,11 +40,17 @@ Hacer un programa en PHP que tenga un array con 8 numeros enteros y que haga lo 
     echo "<hr>";
 
     //Buscar elemento
-    $buscar = 3;
-    if(array_search($buscar, $numerosEnteros)){
-        echo "El numero buscado existe en el array";
-    } else{
-        echo "El numero buscado NO existe en el array";
+    if(isset($_GET['numero'])){
+        $buscar = $_GET['numero'];
+
+        echo "<h1>Buscar en el array el numero $buscar</h1>";
+        $search = array_search($buscar,$numerosEnteros);
+
+        if(!empty($search)){
+            echo "<h3>El numero buscado existe en el array, en el indice: $search</h3>";
+        } else{
+            echo "<h3>El numero buscado NO existe en el array</h3>";
+        }
     }
 
 ?>
