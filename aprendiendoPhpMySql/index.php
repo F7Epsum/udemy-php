@@ -22,4 +22,15 @@
     }
 
 
+    //Insertar en la BBDD desde php
+
+    $sql = "INSERT INTO notas VALUES(null, 'Nota desde PHP', 'Esto es una nota dsede PHP', 'green')";
+    $insert = mysqli_query($conexion, $sql);
+
+    if($insert){
+        echo "La nota ha sido agregada";
+    }else{
+        echo "error: ".mysqli_error($conexion);
+    }
+
 ?>
