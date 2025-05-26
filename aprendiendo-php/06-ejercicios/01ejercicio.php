@@ -11,11 +11,11 @@ esta a 1 o 0 -->
          $_SESSION['numero'] = 0;
     }
 
-    if(isset($_GET['counter']) && $_GET['counter']== 1){
+    if(isset($_GET['counter']) && $_GET['counter'] == 1){
         $_SESSION['numero']++;
     }
 
-    if(isset($_GET['counter']) && $_GET['counter']== 0){
+    if(isset($_GET['counter']) && $_GET['counter'] == 0){
         $_SESSION['numero']--;
     }
 
@@ -23,5 +23,5 @@ esta a 1 o 0 -->
 
 <h1>El valor de la sesion numero es: <?=$_SESSION['numero']?></h1>
 
-<a href="ejercicio1.php?counter=1">Aumentar el valor</a><br/>
-<a href="ejercicio1.php?counter=0">Disminuir el valor</a>
+<a href="01ejercicio.php?counter=1">Aumentar el valor</a><br/>
+<a href="01ejercicio.php?counter=0">Disminuir el valor</a>
