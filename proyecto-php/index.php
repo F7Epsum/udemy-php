@@ -25,6 +25,7 @@
                     <li><a href="index.php">Contacto</a></li>
                 </ul>
             </nav>
+            <div class="clearfix"></div>
         </header>
 
         <div id="contenedor">
@@ -66,22 +67,31 @@
             <div id="principal">
                 <h1>Ultimas entradas</h1>
                 <article class="entrada">
-                    <h2>Titulo de mi entrada</h2>
-                    <p>LoremIpsum</p>
+                    <a href="">
+                        <h2>Titulo de mi entrada</h2>
+                        <p>LoremIpsum</p>
+                    </a>
                 </article>
                 <article class="entrada">
-                    <h2>Titulo de mi entrada</h2>
-                    <p>LoremIpsum</p>
+                    <a href="">
+                        <h2>Titulo de mi entrada</h2>
+                        <p>LoremIpsum</p>
+                    </a>
                 </article>
                 <article class="entrada">
-                    <h2>Titulo de mi entrada</h2>
-                    <p>LoremIpsum</p>
+                    <a href="">
+                        <h2>Titulo de mi entrada</h2>
+                        <p>LoremIpsum</p>
+                    </a>
                 </article>
+    
+                <div id="ver-todas">
+                    <a href="">Ver todas las entradas</a>
+                </div>
             </div>
+            <div class="clearfix"></div>
         </div>
 
-        <!--FOOTER-->
-        <footer id="pie">
             <p>Desarrollado por Feca7 &copy; 2025</p>
         </footer>
 
