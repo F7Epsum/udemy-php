@@ -3,6 +3,7 @@
     <head>
         <meta charset="utf-8">
         <title>Proyecto PHP - Blog de Videojuegos</title>
+        <link rel="stylesheet" type="text/css" href="./assets/css/style.css"/>
     </head>
     <body>
         <!--HEADER-->
