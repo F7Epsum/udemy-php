@@ -1,4 +1,5 @@
 <?php require_once 'conexion.php'; ?>
+<?php session_start(); ?>
 
 <!DOCTYPE HTML>
 <html lang="es">
@@ -30,6 +31,4 @@
             <div class="clearfix"></div>
         </header>
 
-
-
-?>
+        <div id="contenedor">
