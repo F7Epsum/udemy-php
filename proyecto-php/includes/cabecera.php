@@ -1,5 +1,4 @@
-<?php require_once 'conexion.php'; ?>
-<?php session_start(); ?>
+<?php require_once 'includes/conexion.php'; ?>
 
 <!DOCTYPE HTML>
 <html lang="es">

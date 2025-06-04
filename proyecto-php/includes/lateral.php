@@ -35,6 +35,6 @@
 
             <input type="submit" name="submit" value="Registrar">
         </form>
-        <?php borrarErrores() ?>
+        <?php borrarErrores(); ?>
     </div>
 </aside>
