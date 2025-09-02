@@ -1,6 +1,11 @@
 <?php
-session_start();
 if(isset($_POST)){
+
+    //Conexion a BBDD
+require_once 'includes/conexion.php'
+session_start();
+
+
     /* if(isset($_POST['nombre'])){
         $nombre = $_POST['nombre'];
     }else{
@@ -54,13 +59,34 @@ if(isset($_POST)){
     $saveUser = false;
     if(count($errores) == 0){
         $saveUser =true;
+
+        //CIFRAR LA CONTRASEÑA
+        $password_secure = password_hash($password, PASSWORD_BCRYPT, ['cost'=>4]);
+
+        //Verificar la constraseña que es correcta 
+        // var_dump($password);
+        // var_dump($password_secure);
+        // password_verify($password,$password_secure);
+        // die();
+
         //INSERTAR USUARIO EN BBDD
+        $sql = "INSERT INTO usuarios VALUES(null, $nombre, $apellido, $email, $password, CURDATE();";
+        $save = mysqli_query($db,$sql);
+
+        if($save){
+            $_SESSION['complete'] = 'El registro se completo con exito';
+        }
+        else{
+            $_SESSION['errores']['general'] = 'Fallo al guardar usuario';
+        }
+
+
     }else{
         $_SESSION['errores'] = $errores;
-        header('Location: index.php');
-
-
     }
 }
+
+header('Location: index.php');
+
 
 ?>

@@ -14,24 +14,33 @@
             <input type="submit" value="Entrar">
         </form>
     </div>
+
+
     <div id="register" class="bloque">
         <h3>Registrate</h3>
-        <form method="post" action="registro.php">
+
+        <?php if(isset($_SESSION['complete'])): ?>
+            <div class="alerta alerta-exito"> 
+                <?= echo $_SESSION['complete']?>
+            </div>
+        <?php endif; ?>
+
+        <form method="POST" action="registro.php">
             <label for="nombre">Nombre</label>
             <input type="text" name="nombre" placeholder="Nombre">
-            <?php echo isset($_SESSION['errores']) ? mostrarError($_SESSION['errores'], 'nombre') : '';?>
+            <?php echo isset($_SESSION['errores']) ? mostrarError($_SESSION['errores'], 'nombre') : ''; ?>
             
             <label for="apellido">Apellido</label>
             <input type="text" name="apellido" placeholder="Apellido">
-            <?php echo isset($_SESSION['errores']) ? mostrarError($_SESSION['errores'], 'apellido') : '';?>
+            <?php echo isset($_SESSION['errores']) ? mostrarError($_SESSION['errores'], 'apellido') : ''; ?>
             
             <label for="email">Email</label>
             <input type="email" name="email" placeholder="Email">
-            <?php echo isset($_SESSION['errores']) ? mostrarError($_SESSION['errores'], 'email') : '';?>
+            <?php echo isset($_SESSION['errores']) ? mostrarError($_SESSION['errores'], 'email') : ''; ?>
             
             <label for="password">Contraseña</label>
             <input type="password" name="password" placeholder="Contraseña">
-            <?php echo isset($_SESSION['errores']) ? mostrarError($_SESSION['errores'], 'password') : '';?>
+            <?php echo isset($_SESSION['errores']) ? mostrarError($_SESSION['errores'], 'password') : ''; ?>
 
             <input type="submit" name="submit" value="Registrar">
         </form>
